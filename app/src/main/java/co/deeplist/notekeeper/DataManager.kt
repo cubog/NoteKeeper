@@ -1,11 +1,16 @@
 package co.deeplist.notekeeper
 
-class DataManager {
+object DataManager {
     val courses = HashMap<String, CourseInfo>()
     val notes = ArrayList<NoteInfo>()
 
     init {
         initializeCourses()
+        initializeNotes()
+    }
+
+    private fun initializeNotes() {
+
     }
 
     private fun initializeCourses() {
